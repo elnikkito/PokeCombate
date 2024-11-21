@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Imagen del primer Pokémon -->
+    <ImageView
+        android:id="@+id/imagenPokemon1"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true" />
+
+    <!-- Estado del primer Pokémon -->
+    <TextView
+        android:id="@+id/estadoPokemon1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pikachu | HP: 100"
+        android:layout_below="@id/imagenPokemon1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+    <!-- Estadísticas del primer Pokémon -->
+    <TextView
+        android:id="@+id/estadisticasPokemon1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ataque: 50, Defensa: 30, At. Esp: 60, Def. Esp: 40"
+        android:layout_below="@id/estadoPokemon1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp" />
+
+    <!-- Imagen del segundo Pokémon -->
+    <ImageView
+        android:id="@+id/imagenPokemon2"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/estadisticasPokemon1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <!-- Estado del segundo Pokémon -->
+    <TextView
+        android:id="@+id/estadoPokemon2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Charmander | HP: 100"
+        android:layout_below="@id/imagenPokemon2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+    <!-- Estadísticas del segundo Pokémon -->
+    <TextView
+        android:id="@+id/estadisticasPokemon2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ataque: 55, Defensa: 35, At. Esp: 65, Def. Esp: 45"
+        android:layout_below="@id/estadoPokemon2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp" />
+
+    <!-- Mensaje de combate -->
+    <TextView
+        android:id="@+id/mensajeCombate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¡El combate comienza!"
+        android:layout_below="@id/estadisticasPokemon2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <!-- Botón de atacar -->
+    <Button
+        android:id="@+id/botonAtacar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Atacar"
+        android:layout_below="@id/mensajeCombate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" />
+
+</RelativeLayout>
